@@ -1,0 +1,728 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
+}
+#body{
+    transition: 500ms ease-in-out;
+    transition-delay:100ms ;
+}
+header{
+    background-color: rgb(231, 175, 71);
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 5%;
+    width: 100%;
+    padding: 0;
+}
+header nav img{
+    width: 180px;
+    height: 90px;
+    float: left;
+    margin-left: -50px;
+    
+}
+header nav{
+    overflow: none;
+    position: sticky;
+    top: 0%;
+}
+.navDiv{
+    float: right;
+    margin-right: 0%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.navDiv:first-child{
+    background-color: gray;
+}
+header nav .navDiv  a{
+    padding: 10px;
+    background-color: rgb(216, 184, 126);
+    margin-left: 5px;
+    border-radius: 10px ;
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    font-weight: 580;
+    transition: 500ms ease-in-out;
+    outline: none;
+}
+header nav .navDiv  a i{
+    margin-right:10px;
+}
+header .navDiv a:hover{
+    color: ghostwhite;
+    padding: 15px;
+    margin-top: -5px;
+    background-color: dimgrey;
+    transition: 500ms ease-in-out;
+    outline: none;
+    /* border: 3px solid yellow; */
+}
+.Sect1{    background-image:linear-gradient(150deg,rgba(14, 21, 48, 0.7), black), url("logo/pexels-pixabay-147413.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.Sect1 h1{
+    margin-top: 20%;
+    color: white;
+    margin-bottom: 20px;
+    /* font-family: 'Passion One', cursive; */
+    letter-spacing: 1px;
+    font-size: 52px;
+}
+.Sect1 p{
+    color: white;
+    font-family: Passion One, 'cursive';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.Sect1 h3{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.Sect1 .regLog{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 200px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.Sect1 .regLog .reg{
+    background-color: coral;
+    padding: 5px;
+    border: 2px solid white;
+    margin: 0 50px;
+    max-width: 99%;
+    width: 20%;
+    border-radius: 50px;
+    outline: none;
+}
+.Sect1 .regLog .reg:hover{
+    width: 23%;
+    padding: 10px;
+    transition: 500ms ease;
+    outline: none;
+}
+
+.Sect1  .regLog .reg{
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    /* font-weight: 550; */
+}
+.Sect1 .regLog .log{
+    background-color: rgb(80, 121, 255);
+    padding: 5px;
+    border: 2px solid white;
+    max-width: 99%;
+    width: 20%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    outline: none;
+}
+.Sect1  .regLog .log:hover{
+    width: 23%;
+    padding: 10px;
+    transition: 500ms ease;
+    outline: none;
+}
+.Sect1 .regLog .contUs{
+    align-self: center;
+    background-color: rgb(34, 168, 150);
+    padding: 8px;
+    border: 2px solid white;
+    margin-top:50px;
+    width: 70%;
+    border-radius: 50px;
+    outline: none;
+}
+.Sect1 .regLog .contUs:hover{
+    width: 80%;
+    padding: 15px;
+    transition: 500ms ease;
+    outline: none;
+}
+.Sect1 .regLog .contUs a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    outline: none;
+}
+    .Sect2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    margin: 30px 0%;
+}
+
+.Sect2 p{
+    font-size: 25px;
+    padding: 30px 0;
+    text-indent: 10px;
+    text-align:center;
+    width: 95%;
+    border-radius: 30px;
+    border: 2px solid lightgrey;
+    box-shadow: 3px 5px 15px  grey;
+}
+   .compsLst{
+        margin-top: 10px;
+        border-radius: 30px;
+        padding: 30px;
+        width: 80%;
+    border: 2px solid lightgrey;
+    box-shadow: 3px 5px 15px  grey;
+    }
+    .compsLst ul{
+        list-style: none;
+        text-align: center;
+    }
+    .compsLst ul li{
+        border-radius: 30px;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        outline: none;
+        outline: none;
+    }
+    .compsLst ul li a{
+        color: black;
+        text-decoration: none;
+        outline: none;
+    }
+.Sect2 .compsLst ul li:first-child{
+        background-color: brown;
+    }
+.Sect2 .compsLst ul li:nth-child(2){
+    background-color: green;
+}
+.Sect2 .compsLst ul li:nth-child(3){
+    background-color: blue;
+}
+.Sect2 .compsLst ul li:nth-child(4){
+    background-color: rgb(0, 132, 255);
+}
+.sect3{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+}
+.sect3:first-child{
+    align-self: center;
+}
+.sect3 .Mtn{
+    background-color: rgb(245, 184, 17);
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-content: center;
+    margin-left: 10px;
+    align-items: center;
+    flex-grow: 2;
+    padding-bottom: 15px;
+}
+.sect3 .Mtn img{
+    margin-top: 15px;
+    width: 150px;
+    /* height: 30%; */
+    border-radius: 1000px;
+    border: 2px solid white;
+    
+}
+.sect3 .Glo{
+    background-color: green;
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-content: center;
+    margin-left: 10px;
+    align-items: center;
+    flex-grow: 2;
+    padding-bottom: 15px;
+}
+.sect3 .Glo img{
+    margin-top: 15px;
+    width: 150px;
+    /* height: 30%; */
+    border-radius: 1000px;
+    border: 2px solid white;
+}
+.sect3 .airtel{
+    background-color: rgb(235, 80, 80);
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-content: center;
+    margin-left: 10px;
+    align-items: center;
+    flex-grow: 2;
+    padding-bottom: 15px;
+}
+.sect3 .airtel img{
+    margin-top: 15px;
+    width: 110px;
+    /* height: 30%; */
+    border-radius: 2000px;
+    border: 2px solid white;
+}
+.sect3 .mobile9{
+    background-color:rgb(113, 197, 30);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10px;
+    align-items: center;    
+    flex-grow: 2;
+    padding-bottom: 15px;
+}
+.sect3 .mobile9 img{
+    margin-top: 15px;
+    width: 150px;
+    /* height: 30%; */
+    border-radius: 1000px;
+    border: 2px solid white;
+}
+.sect3 p{
+    font-size: 110%;
+    font-weight:bold;
+    color: white;
+}
+.BalChk{
+    background-color: white;
+    padding: 15px;
+    width: 95%;
+}
+.BalChk p{
+    color: black;
+    text-align: center;
+}
+button{
+    background-color: saddlebrown;
+    width: 115%;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    outline: none;
+}
+.Sect4{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    background-color: rgb(231, 175, 71);
+}
+.Sect4 h2{
+    align-self: center;
+    font-size: 40px;
+}
+.Sect4 .logos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.Sect4 .logos img{
+    margin-top: 15px;
+    width: 200px;
+    /* height: 30%; */
+    border-radius: 1000px;
+    /* border: 2px solid white;    */
+}
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    border-top: 5px solid white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+} 
+.footer div {
+    margin:0px 5px;
+    max-width: 600px;
+    /* width: 100px; */
+    /* border: 3px solid red; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90%;
+}
+.footer div h3{
+    margin-bottom: 30px;
+    /* padding: 0px 100px;
+    width: 100px;
+    text-align: center; */
+    border: 1px solid white;
+}
+.footer div ul{
+    list-style: none;
+    display:flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer div ul li{
+    padding-bottom: 10px;
+    outline: none;
+}
+.footer div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    outline: none;
+}
+.footer div ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+    outline: none;
+}
+.footer p{
+    position: relative;
+    text-align: center;
+    bottom: 0px;
+    font-size: 16px;
+}
+ .fas{
+    display: none;
+}
+
+@media screen and (min-width:280px) and (max-width:600px) and (max-width:800px) and (max-width:1024px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+        
+    header nav{
+        overflow: hidden;
+        z-index: 2;
+    }
+    header nav .navDiv{
+        background-color: rgb(14, 13, 13);
+        height:100%;
+        position:fixed;
+        right: -100%;
+        top: -5%;
+        width: 50%;
+        /* top: 0px; */
+        display: flex;
+        flex-flow: column nowrap;
+        z-index: 1;
+        transition: 700ms ease-in-out;
+        transition-delay: 100ms;
+    }
+    .fas{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top:8%;
+        margin-right: 5%;
+        font-size: 25px;
+        color: black;
+        transition:1000ms;
+        /* z-index: 2; */
+    }
+    header .navDiv .fas{
+        display: block;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        color: rgb(243, 243, 243);
+        /* transform:rotate(90deg); */
+        transition:500ms;
+        /* border: 3px solid red; */
+        padding: 0;
+        width: 20px;
+    }
+    header nav .navDiv a{
+        padding: 10px;
+        width:70%;
+        font-size: 100%;
+        margin: 10px 15px;
+        align-self:center ;
+        transition: 500ms ease-out;
+        text-align: center;
+        outline: none;
+    }
+    header nav .navDiv a:hover{
+        text-align: center;
+        width: 60%;
+        outline: none;
+    }
+    .Sect1{
+    background-image:linear-gradient(150deg,rgba(14, 21, 48, 0.7), black), url("logo/pexels-pixabay-147413.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100%; 
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px 20px 0px 20px; 
+}
+
+.Sect1 h1{
+    margin-top: 20%;
+    color: white;
+    margin-bottom: 20px;
+    /* font-family: 'Passion One', cursive; */
+    letter-spacing: -3px;
+    font-size: 38px;
+}
+.Sect1 p{
+    color: white;
+    font-family: Passion One, 'cursive';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.Sect1 h3{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.Sect1 .regLog{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 200px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.Sect1 .regLog .reg{
+    background-color: coral;
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    max-width: 99%;
+    width: 70%;
+    border-radius: 50px;
+}
+.Sect1 .regLog .reg:hover{
+    width: 80%;
+    padding: 10px;
+    transition: 500ms ease;
+    outline: none;
+}
+
+.Sect1  .regLog .reg{
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    /* font-weight: 550; */
+}
+.Sect1 .regLog .log{
+    background-color: rgb(80, 121, 255);
+    padding: 5px;
+    border: 2px solid white;
+    max-width: 99%;
+    width: 70%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    outline: none;
+}
+.Sect1  .regLog .log:hover{
+    width: 23%;
+    padding: 10px;
+    transition: 500ms ease;
+    outline: none;
+}
+.Sect1  .regLog .contUs{
+    align-self: center;
+    background-color: rgb(34, 168, 150);
+    padding: 8px;
+    border: 2px solid white;
+    max-width: 99%;
+    margin-top:80px;
+    width: 70%;
+    border-radius: 50px;
+    outline: none;
+}
+.Sect1  .regLog .contUs:hover{
+    width: 80%;
+    padding: 10px;
+    transition: 500ms ease;
+    outline: none;
+}
+.Sect1 .regLog .contUs a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    outline: none;
+}
+    .Sect2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    margin: 30px 0%;
+}
+
+.Sect2 p{
+    font-size: 12px;
+    padding-top: 10px;
+    text-indent: 10px;
+    text-align:center;
+    width: 95%;
+    border-radius: 30px;
+    border: 2px solid lightgrey;
+    box-shadow: 3px 5px 15px  grey;
+}
+   .compsLst{
+        margin-top: 20px;
+        border-radius: 30px;
+        padding: 30px;
+        width: 80%;
+    border: 2px solid lightgrey;
+    box-shadow: 3px 5px 15px  grey;
+    }
+    .compsLst ul{
+        list-style: none;
+        text-align: center;
+    }
+    .compsLst ul li{
+        border-radius: 30px;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        outline: none;
+    }
+    .compsLst ul li a{
+        color: black;
+        text-decoration: none;
+        outline: none;
+    }
+.Sect2 .compsLst ul li:first-child{
+        background-color: brown;
+    }
+.Sect2 .compsLst ul li:nth-child(2){
+    background-color: green;
+}
+.Sect2 .compsLst ul li:nth-child(3){
+    background-color: blue;
+}
+.Sect2 .compsLst ul li:nth-child(4){
+    background-color: rgb(0, 132, 255);
+}
+    .BalChk{
+        background-color: white;
+        padding: 15px;
+        margin: 30px 0px;
+        width: 95%;
+    }
+    .Sect4 h2{
+       margin-top: 10px;
+        font-size: 25px;
+    }
+    .Sect4 .logos img{
+        margin-top: 15px;
+        width: 60px;
+        /* height: 30%; */
+        border-radius: 1000px;
+        /* border: 2px solid white;    */
+    }
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: black;
+        color: white;
+        justify-content:center;
+        /* border-top: 10px solid white; */
+        /* border-bottom: 10px solid white; */
+        padding:40px 0;
+    }
+    .footer div {
+        margin:0px 5px;
+        max-width: 320px;
+        width: 100px;
+        border:none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 90%;
+    }
+    .footer div h3{
+        margin-bottom: 10px;
+        text-align: center;
+        /* padding: 0px 100px; */
+        width: 100px;
+        border: 1px solid white;
+        /* border: 3px solid blue; */
+    }
+    .footer div ul{
+        list-style: none;
+        display:flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer div ul li{
+        padding-bottom: 10px;
+        outline: none;
+    }
+    .footer div ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        outline: none;
+    }
+    .footer div ul li a:hover{
+        color: blue;
+        text-decoration: underline;
+        outline: none;
+    }
+    .footer p{
+        position: relative;
+        text-align: center;
+        bottom: 0px;
+        font-size: 10px;
+    }
+}

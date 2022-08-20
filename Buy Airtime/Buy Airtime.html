@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CONTENT-TYPE" content="html/text" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+    <script src="https://kit.fontawesome.com/ab15dfcb61.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville&family=Passion+One&display=swap" rel="stylesheet">
+    <link href="Buy Airtime.css" rel="STYLESHEET">
+    <title>MTC.com</title>
+</head>
+<body id="body" >
+    <header>
+        <nav>
+            <img src="logo/mtc_small_size-removebg-preview.png">
+            <i class="fas fa-stream" onclick="openNav( )" id="openNav"></i>
+            <div class="navDiv" id="navDiv">
+                <i class="fas fa-times" onclick="closeNav( )" id="closeNav"></i>
+                <a href="../Home/Home.html"><i class="fas fa-home" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Dashboard</a>
+                <a href="../UserProfile/UserProfile.html"><i class="fas fa-user-circle" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Profile</a>
+                <a href="../Buy data/Buy Data.html"><i class="fas fa-signal"  style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Data</a>
+                <a href="#" style="background-color: gray; color: whitesmoke;"><i class="fas fa-phone" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Airtime</a>
+                 <a href="#" class="FndWlt"  onclick="opnFund ( )"><i class="fas fa-credit-card" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Fund Wallet
+                    <div class="WltLst" id="WltLst" >
+                        <a href="#">Paystack</a>
+                        <a href="#">Monnify</a>
+                        <a href="#">Flutterwave</a>
+                        <a href="#">Cash Deposit</a>
+                    </div>
+                </a><i ></i>
+                <a href="#"><i class="fas fa-money-check-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Price List</a>
+                <a href="#"><i class="fas fa-cogs" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Settings</a>
+                <a href="../Contact Admin/Contact admin.html"><i class="fas fa-headset" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Contact Admin</a>
+                <a href="../Log In/Log In.html"><i class="fas fa-sign-out-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Log out</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h3>Airtel TopUp</h3>
+            <br>
+            <div class="DatHldr">        
+                <form action="url" method="post">
+                    <div class="frmInpt">
+                    <b>Network*</b>
+                    <br>
+                    <select id="ntwrk" style="width: 285px;" >
+                        <option name="---" value="---">----------</option>
+                        <option id="mtn" name="MTN" value="MTN">MTN</option>
+                        <option id="glo" name="GLO" value="GLO">GLO</option>
+                        <option id="9mob" name="9mob" value="9mob">9MOBILE</option>
+                        <option id="aitel" name="AIRTEL" value="AIRTEL">AIRTEL</option>
+                        <option id="aitel" name="SMILE" value="SMILE">SMILE</option>
+                    </select>
+                    <br>
+                    <br>
+                    <div id="DATATYPE">
+                    <b>Airtime Type*</b>
+                    <br>
+                        <select id="DatTyp">
+                            <option name="---" value="---">----------</option>
+                            <option name="sme" id="VTU" value="VTU">VTU</option>
+                            <option name="Gifting" id="Shr$sell" value="Shr$sell">Share and Sell</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <b>Phone Number</b>*
+                    <br>
+                    <input type="tel" name="tel">
+                    <br>
+                    <br>
+                    <b>Amount*</b>
+                    <br>
+                    <input type="text" name="Amnt">
+                    <br>
+                    <input type="radio" name="validator"><b style="font-size: 100%; margin-left: 10px;">Bypass Number validator</b>
+                    <br><br>
+                    <b>Amount to pay</b>*
+                    <br>
+                    <input type="text" id="amnt" name="amount">
+                    <br>
+                    <button>Purchase Data</button>
+                </div>
+                    
+                    <!-- <input id="color" type="color"> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="about">
+            <h3>About MTC</h3>
+            <p>MTC is an online platform with a 24/7 automated data funding and transaction processing.<br>
+                Enjoy fast and efficient transaction with MTC always!
+            </p>
+        </div>
+        <div class="links">
+            <h3>Navigation links</h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="addrs">
+            <h3>
+                Address
+            </h3>
+            <p>Opposite satellite campus,NTA road, Off Ilawe road, falegan area, Ado-Ekiti. Ekiti state</p>
+        </div>
+        </div>
+        <!-- <div class="prg"> -->
+        <p>Copyright &copy; MTC.com<br><br><br>All rights reserved. </p>
+        <!-- </div> -->
+        
+    </footer>
+
+
+
+    <script>
+        // let usr = "Twain";
+        // document.getElementById("user").innerHTML = usr;
+        let body = document.getElementById("body");
+        let WalletLst = document.getElementById("WltLst");
+        WalletLst.style.display = "none";
+        let sideNav = document.getElementById("navDiv");
+        let closeBtn = document.getElementById("closeNav");
+        let openBtn = document.getElementById("openNav");
+        function openNav( ){
+            sideNav.style.right = "0";
+            openBtn.style.right = "-100%";
+            // closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "-50%"
+
+        }
+        function closeNav( ){
+            sideNav.style.right = "-100%";
+            openBtn.style.right = "0px";
+            closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "0%"
+        
+        }
+        function opnFund( ){
+            if(WalletLst.style.display === "none"){
+                WalletLst.style.display = "flex";
+                WalletLst.style.transition = "300ms";
+            }
+            else{
+                WalletLst.style.display = "none";
+                WalletLst.style.transition = "300ms";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
+}
+#body{
+    transition: 500ms ease-in-out;
+    transition-delay:100ms ;
+}
+header{
+    background-color: rgb(231, 175, 71);
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 5%;
+    width: 100%;
+    padding: 0;
+}
+header nav img{
+    width: 180px;
+    height: 90px;
+    float: left;
+    margin-left: -50px;
+    
+}
+header nav{
+    overflow: none;
+    position: sticky;
+    top: 0%;
+}
+.navDiv{
+    float: right;
+    margin-right: 0%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.navDiv:first-child{
+    background-color: gray;
+}
+header nav .navDiv  a i{
+    margin-right: 10px;
+}
+header nav .navDiv  a{
+    padding: 10px;
+    background-color: rgb(216, 184, 126);
+    margin-left: 5px;
+    border-radius: 10px ;
+    text-decoration: none;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    font-weight: 580;
+    transition: 500ms ease-in-out;
+    outline: none;
+}
+header .navDiv a:hover{
+    color: ghostwhite;
+    padding: 15px;
+    margin-top: -5px;
+    background-color: dimgrey;
+    transition: 500ms ease-in-out;
+    outline: none;
+    /* border: 3px solid yellow; */
+}
+section{
+    background-image:linear-gradient(360deg,rgba(4,9,30,0.65), rgba(4,9,30,0.65)),url("logo/pexels-pixabay-267392.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    /* margin-bottom: 10px; */
+    padding-top: 20px;
+    height: 100vh;
+}
+section .container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    border: 3.5px solid rgb(61, 59, 59);
+    margin:0 auto;
+    padding:0px 20px;
+    max-width:500px;
+    height: 95vh;
+    position: relative;
+    box-shadow: 8px 5px 25px rgb(90, 88, 88), -15px -5px 40px rgb(2, 2, 2);
+    transition: 300ms ease-out;
+    border-radius: 20px;
+    align-content: center;
+    color: cornsilk;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.field{
+    position:relative;
+    padding:80px 50px 0 50px;
+    max-width:380px;
+    /* top:100px; */
+    margin-bottom: 10px;
+    height:60vh;
+    border: 3.5px solid rgb(61, 59, 59);
+    border-radius: 30px;
+    box-shadow: 8px 5px 25px rgb(90, 88, 88), -15px -5px 40px rgb(32, 31, 31);
+}
+#contact{
+    /* width: 300px; */
+    outline: none;
+    position: absolute;
+    bottom: -100%;
+    transition: 900ms ease-in-out;
+}
+#contact a{
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 24px;
+  
+}
+
+#contact .fab {
+    font-size: 45px;
+    color: green;
+    transition: 500ms ease-out;
+    margin-left: 20px;
+    /* border: 3px solid red; */
+    
+}
+#contact .fab:hover{
+    font-size: 55px;
+}
+.rightSlide{
+    /* border:5px solid black; */
+    position: relative;
+    right:-220%;
+    transition:600ms ease-in-out;
+}
+.leftSlide{
+    /* border:5px solid blue; */
+    position: relative;
+    left: -220%;
+    transition:550ms ease-in;
+}
+.inpt{
+    width: 0px;
+    outline: none;
+    transition: 700ms ease-out;
+    transition-delay: 500ms;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgray;
+    color: white;
+    height: 20px;
+    text-indent: 20px;
+    font-weight: bold;
+    /* margin:50px 0px 50px 35px; */
+    /* border: 2px solid blue; */
+}
+.inpt2{
+    width: 0px;
+    transition: 700ms ease-out;
+    transition-delay: 500ms;
+    border: none;
+    background-color: darkgray;
+    color: white;
+    text-indent: 20px;
+    height: 20px;
+    outline: none;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+}
+#input{
+    margin-top: 5px;
+    /* border: 2px solid red; */
+}
+#input div{
+    /* border: 3px solid red; */
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#input div a:nth-child(2){
+    outline: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+#input div:nth-child(3){
+    margin-top: 50px;
+}
+#input div:nth-child(3) a{
+    margin-top: 50px;
+    margin-left: 35px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px ;
+    background-color: rgb(245, 236, 220);
+}
+b{
+    margin-right: 10px;
+}
+.submit{
+    width: 100px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .fas{
+    position: relative;
+    font-size: 80px;
+    margin-bottom: 30px;
+    align-self: center;
+    color: cornsilk;
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    border-top: 5px solid white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+} 
+.footer div {
+    margin:0px 5px;
+    max-width: 600px;
+    /* width: 100px; */
+    /* border: 3px solid red; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90%;
+}
+.footer div h3{
+    margin-bottom: 30px;
+    /* padding: 0px 100px;
+    width: 100px;
+    text-align: center; */
+    border: 1px solid white;
+}
+.footer div ul{
+    list-style: none;
+    display:flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer div ul li{
+    padding-bottom: 10px;
+    outline: none;
+}
+.footer div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    outline: none;
+}
+.footer div ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+    outline: none;
+}
+.footer p{
+    position: relative;
+    text-align: center;
+    bottom: 0px;
+    font-size: 16px;
+}
+nav .fas{
+    display: none;
+}
+/* @media screen and (min-width:280px) and (max-width:600px) and (max-width:800px) and (max-width:1024px){ */
+    @media only screen and (max-width:600px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+        
+    header nav{
+        overflow: hidden;
+        z-index: 2;
+    }
+    header nav .navDiv{
+        background-color: rgb(14, 13, 13);
+        height:100vh;
+        position:fixed;
+        right: -100%;
+        top: -5%;
+        width: 50%;
+        overflow:auto;
+        scroll-behavior: smooth;
+        /* top: 0px; */
+        display: flex;
+        flex-flow: column nowrap;
+        z-index: 1;
+        transition: 700ms ease-in-out;
+        transition-delay: 100ms;
+    }
+    nav .fas{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top:5%;
+        margin-right: 5%;
+        font-size: 120%;
+        color: black;
+        transition:1000ms;
+        /* border: 3px solid red; */
+        /* z-index: 2; */
+    }
+    header .navDiv .fas{
+        display: block;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 120%;
+        color: rgb(243, 243, 243);
+        /* transform:rotate(90deg); */
+        transition:500ms;
+        /* border: 3px solid red; */
+        padding: 0;
+        width: 20px;
+    }
+    
+    #openNav{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top:8%;
+        margin-right: 5%;
+        font-size: 25px;
+        color: black;
+        transition:1000ms;
+        /* z-index: 2; */
+    }
+   /* {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top:8%;
+        margin-right: 5%;
+        font-size: 25px;
+        color: black;
+        transition:1000ms;
+    } */
+    header .navDiv  #closeNav{
+        display: block;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        color: rgb(243, 243, 243);
+        /* transform:rotate(90deg); */
+        transition:500ms;
+        /* border: 3px solid red; */
+        padding: 0;
+        width: 20px;
+    }
+    header nav .navDiv a{
+        padding: 10px;
+        width:70%;
+        font-size: 90%;
+        margin: 10px 15px;
+        align-self:center ;
+        transition: 500ms ease-out;
+        text-align: center;
+        outline: none;
+    }
+    
+    header nav .navDiv a:hover{
+        text-align: center;
+        width: 60%;
+        outline: none;
+    }
+    
+    .container .fas{
+        position: relative;
+        font-size: 55px;
+        margin-bottom: 15px;
+        align-self: center;
+        color: cornsilk;
+    }
+    #input{
+        margin-top: -12px;
+        /* display: flex;
+        flex-flow: row wrap;  */
+           /* border: 2px solid red; */
+
+        justify-content: space-between;
+    }
+    #input b{
+        font-size: 100%;
+    }
+    #input div p {
+        font-size: 120%;
+        /* border: 1px solid red; */
+
+    }
+    section{
+        padding-bottom: 30px;
+        height: 130vh;
+    }
+    section .container{
+        /* border: 3px solid brown; */
+        height: 120vh;
+    }
+    .field{
+        height: 100vh;
+    }
+    .newMem{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        /* border: 2px solid red; */
+        width: 200px;
+        margin-top: 20px;
+    }
+    .newMem a{
+        width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-transform:uppercase;
+    background-color: rgb(245, 236, 220);
+    font-weight:bold;
+    text-decoration: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

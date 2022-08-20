@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CONTENT-TYPE" content="html/text" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville&family=Passion+One&display=swap" rel="stylesheet">
+    <link href="UserProfile.css" rel="STYLESHEET">
+    <title>User Profile</title>
+</head>
+<body id="body" >
+    <header>
+        <nav>
+            <img src="logo/mtc_small_size-removebg-preview.png">
+            <i class="fas fa-stream" onclick="openNav( )" id="openNav"></i>
+            <div class="navDiv" id="navDiv">
+                <i class="fas fa-times" onclick="closeNav( )" id="closeNav"></i>
+                <a href="../Home/Home.html"><i class="fas fa-home" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Dashboard</a>
+                <a href="../UserProfile/UserProfile.html"  style="background-color: gray; color: whitesmoke;"><i class="fas fa-user-circle" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Profile</a>
+                <a href="../Buy data/Buy Data.html"><i class="fas fa-signal"  style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Data</a>
+                <a href="../Buy Airtime/Buy Airtime.html"><i class="fas fa-phone" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Airtime</a>
+                <a href="#" class="FndWlt"  onclick="opnFund ( )"><i class="fas fa-credit-card" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Fund Wallet
+                    <div class="WltLst" id="WltLst" >
+                        <a href="#">Paystack</a>
+                        <a href="#">Monnify</a>
+                        <a href="#">Flutterwave</a>
+                        <a href="#">Cash Deposit</a>
+                    </div>
+                </a><i ></i>
+                <a href="#"><i class="fas fa-money-check-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Price List</a>
+                <a href="#"><i class="fas fa-cogs" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Settings</a>
+                <a href="../Log In/Log In.html"><i class="fas fa-sign-out-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Log out</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <i class="fas fa-user-circle"></i>
+        <div class="field">
+            <form id="parnt"  action="url" method="POST">          
+
+                <div id="input" class="leftSlide">
+                <b class="bold">Username:{{UserName}}</b>
+                </div>
+                <br>
+                <div id="input2" class="rightSlide">
+                <b class="bold">Fullname:{{Fullname}}</b>
+                </div>
+                <br>
+                <div id="input2" class="rightSlide">
+                <b class="bold">Email:{{Email}}</b>
+                </div>
+                <br>
+                <div id="input2" class="rightSlide">
+                <b class="bold">Registration Status:{{RegStatus}}</b>
+                </div>
+
+                <br>
+                <div id="input" class="leftSlide">
+                        <div> 
+                        <p>Complaints? <a href="#">Contact Admin</a></p>
+                        </div>
+                </div>
+            </form>
+         </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="links">
+            <h3>Navigation links</h3>
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Sign up/SignUp.html">Sign up</a></li>
+                <li><a href="../Log In/Log In.html">Log in</a></li>
+                <li><a href="#">Contact Admin</a></li>
+            </ul>
+        </div>
+        
+        </div>
+        <!-- <div class="prg"> -->
+        <p><br><br>All rights reserved. </p>
+        <!-- </div> -->
+        
+    </footer>
+
+
+
+    <script>
+        
+        // let usr = "Twain";
+        // document.getElementById("user").innerHTML = usr;
+        let body = document.getElementById("body");
+        let WalletLst = document.getElementById("WltLst");
+        WalletLst.style.display = "none";
+        let sideNav = document.getElementById("navDiv");
+        let closeBtn = document.getElementById("closeNav");
+        let openBtn = document.getElementById("openNav");
+        function openNav( ){
+            sideNav.style.right = "0";
+            openBtn.style.right = "-100%";
+            // closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "-50%"
+        }
+        function closeNav( ){
+            sideNav.style.right = "-100%";
+            openBtn.style.right = "0px";
+            closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "0%"
+        
+        }
+        function opnFund( ){
+            if(WalletLst.style.display === "none"){
+                WalletLst.style.display = "flex";
+                WalletLst.style.transition = "300ms";
+            }
+            else{
+                WalletLst.style.display = "none";
+                WalletLst.style.transition = "300ms";
+            }
+        }
+
+
+
+        // End of Nav section*************************************
+
+   
+        
+    
+        
+        
+    </script>
+</body>
+</html>

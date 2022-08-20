@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CONTENT-TYPE" content="html/text" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville&family=Passion+One&display=swap" rel="stylesheet">
+    <link href="Quick Buy.css" rel="STYLESHEET">
+    <title>MTC.com/Buy Data</title>
+</head>
+<body id="body" >
+    <header>
+        <nav>
+            <img src="logo/mtc_small_size-removebg-preview.png">
+            <i class="fas fa-stream" onclick="openNav( )" id="openNav"></i>
+            <div class="navDiv" id="navDiv">
+                <i class="fas fa-times" onclick="closeNav( )" id="closeNav"></i>
+                <a href="../Landing page.html"><i class="fas fa-home" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Home</a>
+                <a href="../Sign up/SignUp.html"><i class="fas fa-user-plus" style=" display:inline;  font-size:18px;color: rgb(29, 29, 27);"></i>Sign up</a>
+                <a href="../Log In/Log In.html"><i class="fas fa-sign-in-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Log in</a>
+                <a href="#" style="background-color: gray; color: whitesmoke;"><i class="fas fa-shopping-cart" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Quick buy</a>
+                <a href="../Contact Admin/Contact admin.css"><i class="fas fa-headset" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Contact Admin</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h3>Buy Data Plan</h3>
+            <br>
+            <div class="DatHldr">
+                <div class="DataCds">
+                    <h3>Codes for Data Balance:</h3>
+                    <p>MTN [SME] *461*4#</p>
+                    <p>MTN [Gifting] *131*4# or *460*260#</p>
+                    <p>9mobile [Gifting] *228#</p>
+                    <p>Airtel *140#</p>
+                    <p>Glo *127*0#</p>
+                </div>
+                
+                <form action="url" method="post">
+                    <b>Network*</b>
+                    <br>
+                    <select id="ntwrk" style="width: 300px;" >
+                        <option name="---" value="---">----------</option>
+                        <option id="mtn" name="MTN" value="MTN">MTN</option>
+                        <option id="glo" name="GLO" value="GLO">GLO</option>
+                        <option id="9mob" name="9mob" value="9mob">9MOBILE</option>
+                        <option id="aitel" name="AIRTEL" value="AIRTEL">AIRTEL</option>
+                    </select>
+                    <br>
+                    <div id="DATATYPE">
+                    <b>Data Type*</b>
+                    <br>
+                        <select id="DatTyp">
+                            <option name="---" value="---">----------</option>
+                            <option name="sme" id="sme" value="SME">SME</option>
+                            <option name="Gifting" id="gifting" value="Gifting">Gifting</option>
+                            <option name="Corporate" id="corporate" value="Corporate">Corporate</option>
+                        </select>
+                    </div>
+                    <br>
+                    <!-- *************************  MTN PLANS ***********************-->
+                        <div id="MtnCorp">
+                    <b>Plan*</b>
+                    <br>
+                            <select>
+                                <option name="---" value="---">----------</option>
+                                <option name="Corp" value="500mb">500.0MB CORPORATE = #120 30days</option>
+                                <option name="Corp" value="1gb">1.0GB CORPORATE = #220 30days</option>
+                                <option name="Corp" value="2gb">2.0GB CORPORATE = #440 30days</option>
+                                <option name="Corp" value="3gb">3.0GB CORPORATE = #660 30days</option>
+                                <option name="Corp" value="5gb">5.0GB CORPORATE = #1,100 30days</option>
+                                <option name="Corp" value="10gb">10.0GB CORPORATE = #2,200 30days</option>
+                                <option name="Corp" value="15gb">15.0GB CORPORATE = #3,300 30days</option>
+                                <option name="Corp" value="20gb">20.0GB CORPORATE = #4,400 30days</option>
+                                <option name="Corp" value="40gb">40.0GB CORPORATE = #8,800 30days</option>
+                                <option name="Corp" value="75gb">75.0GB CORPORATE = #16,500 30days</option>
+                                <option name="Corp" value="250gb">250.0GB CORPORATE = #55,000 30days</option>
+
+                            </select>
+                        </div>
+                        <div id="MtnSme">
+                            <b>Plan*</b>
+                            <br>
+                                    <select>
+                                        <option name="---" value="---">--------</option>
+                                        <option name="sme" value="500mb">500.0MB SME  = #130 30days</option>
+                                        <option name="sme" value="1gb">1.0GB SME = #230 30days</option>
+                                        <option name="sme" value="2gb">2.0GB SME = #460 30days</option>
+                                        <option name="sme" value="3gb">3.0GB SME = #690 30days</option>
+                                        <option name="sme" value="5gb">5.0GB SME = #1,150 30days</option>
+                                        <option name="sme" value="10gb">10.0GB SME = #2,300 30days</option>
+                                    </select>
+                        </div>
+                        <div id="MtnGift">
+                            <b>Plan*</b>
+                            <br>
+                                    <select>
+                                        <option name="---" value="---">---------</option>
+                                        <option name="Gift" value="4.5gb">4.5GB GIFTING = #1,900 30days</option>
+                                        <option name="Gift" value="6gb">6.0GB GIFTING = #2400 30days</option>
+                                        <option name="Gift" value="10gb">10.0GB GIFTING = #2,850 30days</option>
+                                        <option name="Gift" value="12gb">12.0GB GIFTING = #3,360 30days</option>
+                                        <option name="Gift" value="20gb">20.0GB GIFTING = #4,500 30days</option>
+                                        <option name="Gift" value="40gb">40.0GB GIFTING = #9,500 30days</option>
+                                        <option name="Gift" value="75gb">75.0GB GIFTING = #14,500 30days</option>
+                                        <option name="Gift" value="120gb">120.0GB GIFTING = #19,200 30days</option>
+                                    </select>
+                        </div>
+
+                        <!-- *************************  END OF MTN PLANS ***********************-->
+                    
+
+                        <!-- *************************  GLO PLANS ***********************-->
+                        <div id="Glo">
+                            <b>Plan*</b>
+                            <br>
+                                    <select>
+                                        <option name="---" value="---">----------</option>
+                                        <option name="glo" value="1.35gb">1.35GB = #415 30days</option>
+                                        <option name="glo" value="2.9gb">2.9GB = #830 30days</option>
+                                        <option name="glo" value="4.1gb">4.1GB = #1,245 30days</option>
+                                        <option name="glo" value="5.8gb">5.8GB = #1,660 30days</option>
+                                        <option name="glo" value="7.7gb">7.7GB = #2,075 30days</option>
+                                        <option name="glo" value="10gb">10.0GB = #2,490 30days</option>
+                                        <option name="glo" value="14gb">14.0GB = #3,320 30days</option>
+                                        <option name="glo" value="20gb">20.0GB = #4,150 30days</option>
+                                        <option name="glo" value="29.5gb">29.5GB = #6,640 30days</option>
+                                        <option name="glo" value="50gb">50.0GB = #8,300 30days</option>
+                                        <option name="glo" value="93gb">93.0GB = #12,450 30days</option>
+                                        <option name="glo" value="119gb">119.0GB = #14,940 30days</option>
+                                        <option name="glo" value="138gb">138.0GB = #16,600 30days</option>
+                                    </select>
+                                </div>
+
+
+                        <!-- *************************  END OF GLO PLANS ***********************-->
+
+                        <!-- *************************  9MOBILE PLANS ***********************-->
+                        <div id="9mobile">
+                            <b>Plan*</b>
+                            <br>
+                                    <select>
+                                        <option name="---" value="---">----------</option>
+                                        <option name="9mob" value="500mb">500MB GIFTING= #410 30days</option>
+                                        <option name="9mob" value="1.5gb">1.5GB GIFTING = #830 30days</option>
+                                        <option name="9mob" value="2gb">2.0GB GIFTING = #984 30days</option>
+                                        <option name="9mob" value="3gb">3.0GB GIFTING = #1,4650 30days</option>
+                                        <option name="9mob" value="4.5gb">4.5GB GIFTING = #1,640 30days</option>
+                                        <option name="9mob" value="11gb">11.0GB GIFTING = #3,360 30days</option>
+                                        <option name="9mob" value="15gb">15.0GB GIFTING = #4,200 30days</option>
+                                        <option name="9mob" value="40gb">40.0GB GIFTING = #8,400 30days</option>
+                                        <option name="9mob" value="75gb">75.0GB GIFTING = #12,600 30days</option>
+                                    </select>
+                                </div>
+
+                        <!-- *************************  9MOBILE END ***********************-->
+
+                         <!-- *************************  AIRTEL PLANS ***********************-->
+
+                        <div id="airtel">
+                            <b>Plan*</b>
+                            <br>
+                                    <select>
+                                        <option name="---" value="---">----------</option>
+                                        <option name="airtel" value="100mb">100MB CORPORATE GIFTING= #70 7days</option>
+                                        <option name="airtel" value="300b">300MB CORPORATE GIFTING = #180 7days</option>
+                                        <option name="airtel" value="500mb">500MB CORPORATE GIFTING = #250 30days</option>
+                                        <option name="airtel" value="1gb">1.0GB CORPORATE GIFTING = #450 30days</option>
+                                        <option name="airtel" value="750gb">750MB CORPORATE GIFTING = #460 14days</option>
+                                        <option name="airtel" value="1.5gb">1.5GB CORPORATE GIFTING = #900 30days</option>
+                                        <option name="airtel" value="2.0gb">15.0GB CORPORATE GIFTING = #1080 30days</option>
+                                        <option name="airtel" value="3gb">3.0GB CORPORATE GIFTING = #1350 30days</option>
+                                    <option name="airtel" value="6gb">6.0GB CORPORATE GIFTING = #2250 30days</option>
+                                        <option name="airtel" value="10gb">10.0GB CORPORATE GIFTING = #2700 30days</option>
+                                        <option name="airtel" value="11gb">11.0GB CORPORATE GIFTING = #3600 30days</option>
+                                        <option name="airtel" value="20gb">20.0GB CORPORATE GIFTING = #4500 30days</option>
+                                        <option name="airtel" value="40gb">40.0GB CORPORATE GIFTING = #9000 30days</option>
+                                        <option name="airtel" value="75gb">75.0GB CORPORATE GIFTING = #13500 30days</option>
+                                        <option name="airtel" value="120gb">120.0GB CORPORATE GIFTING = #18000 30days</option>
+
+                                    </select>
+                                </div>
+                            <!-- *************************  AIRTEL END ***********************-->
+                            
+
+                    <br>
+                    <b>Phone Number</b>*
+                    <br>
+                    <input type="tel" name="tel">
+                    <br>
+                    <b>Amount*</b>
+                    <br>
+                    <input type="text" name="Amnt">
+                    <br>
+                    <input type="radio" name="validator"><b style="font-size: 100%; margin-left: 10px;">Bypass Number validator</b>
+                    <br>
+                    <button>Purchase Data</button>
+                    <!-- <input id="color" type="color"> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="about">
+            <h3>About MTC</h3>
+            <p>MTC is an online platform with a 24/7 automated data funding and transaction processing.<br>
+                Enjoy fast and efficient transaction with MTC always!
+            </p>
+        </div>
+        <div class="links">
+            <h3>Navigation links</h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="addrs">
+            <h3>
+                Address
+            </h3>
+            <p>Opposite satellite campus,NTA road, Off Ilawe road, falegan area, Ado-Ekiti. Ekiti state</p>
+        </div>
+        </div>
+        <!-- <div class="prg"> -->
+        <p>Copyright &copy; MTC.com<br><br><br>All rights reserved. </p>
+        <!-- </div> -->
+        
+    </footer>
+
+
+
+    <script>
+        let sideNav = document.getElementById("navDiv");
+        let closeBtn = document.getElementById("closeNav");
+        let openBtn = document.getElementById("openNav");
+        function openNav( ){
+            sideNav.style.right = "0";
+            openBtn.style.right = "-100%";
+            // closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "-50%"
+
+        }
+        function closeNav( ){
+            sideNav.style.right = "-100%";
+            openBtn.style.right = "0px";
+            closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "0%"
+
+
+        }
+        function opnFund( ){
+            if(WalletLst.style.display === "none"){
+                WalletLst.style.display = "flex";
+                WalletLst.style.transition = "300ms";
+            }
+            else{
+                WalletLst.style.display = "none";
+                WalletLst.style.transition = "300ms";
+            }
+        }
+
+    </script>
+</body>
+</html>

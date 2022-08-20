@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CONTENT-TYPE" content="html/text" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville&family=Passion+One&display=swap" rel="stylesheet">
+    <link href="Home.css" rel="STYLESHEET">
+    <title>MTC.com</title>
+</head>
+<body id="body" >
+    <header>
+        <nav>
+            <img src="logo/mtc_small_size-removebg-preview.png">
+            <i class="fas fa-stream" onclick="openNav( )" id="openNav"></i>
+            <div class="navDiv" id="navDiv">
+                <i class="fas fa-times" onclick="closeNav( )" id="closeNav"></i>
+                <a href="#" style="background-color: gray; color: whitesmoke;"><i class="fas fa-home" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Dashboard</a>
+                <a href="../UserProfile/UserProfile.html"><i class="fas fa-user-circle" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Profile</a>
+                <a href="../Buy data/Buy Data.html"><i class="fas fa-signal"  style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Data</a>
+                <a href="../Buy Airtime/Buy Airtime.html"><i class="fas fa-phone" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Buy Airtime</a>
+                 <a href="#" class="FndWlt"  onclick="opnFund ( )"><i class="fas fa-credit-card" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Fund Wallet
+                    <div class="WltLst" id="WltLst" >
+                        <a href="#">Paystack</a>
+                        <a href="#">Monnify</a>
+                        <a href="#">Flutterwave</a>
+                        <a href="#">Cash Deposit</a>
+                    </div>
+                </a>
+                <a href="#"><i class="fas fa-money-check-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Price List</a>
+                <a href="#"><i class="fas fa-cogs" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Settings</a>
+                <a href="../Contact Admin/Contact admin.html"><i class="fas fa-headset" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Contact Admin</a>
+                <a href="../Log In/Log In.html"><i class="fas fa-sign-out-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Log out</a>
+            </div>
+        </nav>
+    </header>
+    <section class="sect1" >
+        <div class="acctDtls">
+            <h1>Good day,<span class="user" id="user"></span></h1>
+            <br>
+            <br>
+            <h3>Pay directly into wallet.</h3>
+            <p>Fund your wallet directly by making payment through bank transfer to the account below(#50 Charges):</p>
+            <p>Account Name: Akinpelumi Taiwo <br>
+                Account Number: 0732480420<br>
+                Bank Name: Access bank </p>
+        </div>
+        <div class="fndBtn">
+            <button>Fund</button>
+        </div>
+    </section>
+    <section class="sect2">
+        <h3>Follow us on: <i class="fab fa-twitter" style=" display:inline;  font-size:38px; color:rgb(97, 195, 240);"></i>
+            <i class="fab fa-instagram" style=" display:inline;  font-size:38px; color:rgb(168, 122, 122);"></i> @MTC.NIG</h3>
+            <hr style="position: relative; left:0%; margin: 10px auto;" width="90%">
+            <div class="div1">
+                <a href="#"><i class="fas fa-history"></i>Transactions</a>
+                <a href="#"><i class="fas fa-clipboard"></i>Wallet Summary</a>
+                <a href="#"><i class="fas fa-wallet"></i>Wallet Balance <br> <span id="balance">#50, 000</span></a>
+            </div>
+            <div class="div2">
+                <h3>Purchase data</h3>
+                <hr style="position: relative; left:0%; margin: 10px auto;" width="90%" >
+                <h2>Select Network</h2>
+                <div class="imgLst">
+                <img src="https://logo-all.ru/uploads/posts/2018-07/0_mtn_logo.jpg">
+            <img src="logo/glo-removebg-preview.png">            
+            <img src="https://idemsultimate.com.ng/wp-content/uploads/2014/10/airtel-logo.jpg">
+            <img src="https://i.pinimg.com/564x/8e/e0/71/8ee07116bf4cb42760c349d3144bf4ca.jpg">
+            </div>
+            <div class="ref">
+                <p>Referrer Link: <span class="refLink"></span> <button>Copy</button></p>
+                <hr>
+                <p>Want your own website for the purpose of reselling out product at a lesser price?<br>
+                contact the Admin: <a href="#">Contact Admin</a><br>To own your retail company website</p>
+            </div>
+            </div>
+            <div class="div3">
+                <div class="notify">
+                    <h3>Notification</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ullam dolore magnam deleniti quisquam quos temporibus necessitatibus cumque, ex aut autem eveniet eos hic nostrum beatae ab corrupti voluptates itaque?</p><br>
+                    <button>all messages</button>
+                </div>
+                <div>
+                    <h3>FAQs:</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quidem facere sed, nihil recusandae est velit ratione aperiam! Porro corrupti inventore ut soluta minus officia quod non accusamus excepturi aperiam.</p><br>
+                    <button><b>?</b>FAQs</button>
+                </div>
+                <div>
+                    <h3>Customer service:</h3>
+                    <p>Unresolved issues? invalid transactions? Error in payment?<br>
+                    Contact our customer service to have all issues resolved.
+                    </p>
+                    <button><a href="#">Whatsapp Contact</a></button><br>
+                    <button><a href="#">Telegram Contact</a></button>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="about">
+            <h3>About MTC</h3>
+            <p>MTC is an online platform with a 24/7 automated data funding and transaction processing.<br>
+                Enjoy fast and efficient transaction with MTC always!
+            </p>
+        </div>
+        <div class="links">
+            <h3>Navigation links</h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="addrs">
+            <h3>
+                Address
+            </h3>
+            <p>Opposite satellite campus,NTA road, Off Ilawe road, falegan area, Ado-Ekiti. Ekiti state</p>
+        </div>
+        </div>
+        <!-- <div class="prg"> -->
+        <p>Copyright &copy; MTC.com<br><br><br>All rights reserved. </p>
+        <!-- </div> -->
+        
+    </footer>
+
+
+
+    <script>
+        // let usr = "Twain";
+        // document.getElementById("user").innerHTML = usr;
+        let body = document.getElementById("body");
+        let WalletLst = document.getElementById("WltLst");
+        WalletLst.style.display = "none";
+        let sideNav = document.getElementById("navDiv");
+        let closeBtn = document.getElementById("closeNav");
+        let openBtn = document.getElementById("openNav");
+        function openNav( ){
+            sideNav.style.right = "0";
+            openBtn.style.right = "-100%";
+            // closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "-50%"
+
+        }
+        function closeNav( ){
+            sideNav.style.right = "-100%";
+            openBtn.style.right = "0px";
+            closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "0%"
+        
+        }
+        function opnFund( ){
+            if(WalletLst.style.display === "none"){
+                WalletLst.style.display = "flex";
+                WalletLst.style.transition = "300ms";
+            }
+            else{
+                WalletLst.style.display = "none";
+                WalletLst.style.transition = "300ms";
+            }
+        }
+    </script>
+</body>
+</html>

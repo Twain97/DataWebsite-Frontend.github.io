@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CONTENT-TYPE" content="html/text" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville&family=Passion+One&display=swap" rel="stylesheet">
+    <link href="SignUp.css" rel="STYLESHEET">
+    <title>MTC.com</title>
+</head>
+<body id="body" onload="frmLd( )" onsubmit="sub( )">
+    <header>
+        <nav>
+            <img src="logo/mtc_small_size-removebg-preview.png">
+            <i class="fas fa-stream" onclick="openNav( )" id="openNav"></i>
+            <div class="navDiv" id="navDiv">
+                <i class="fas fa-times" onclick="closeNav( )" id="closeNav"></i>
+                <a href="../Landing page.html"><i class="fas fa-home" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Home</a>
+                <a href="#" style="background-color: gray; color: whitesmoke;"><i class="fas fa-user-plus" style=" display:inline;  font-size:18px;color: rgb(29, 29, 27);"></i>Sign up</a>
+                <a href="../Log In/Log In.html" ><i class="fas fa-sign-in-alt" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Log in</a>
+                <a href="../Quick Buy/Quick Buy.html"><i class="fas fa-shopping-cart" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Quick buy</a>
+                <a href="../Contact Admin/Contact admin.html"><i class="fas fa-headset" style=" display:inline;  font-size:18px; color: rgb(29, 29, 27);"></i>Contact Admin</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <i class="fas fa-user-circle"></i>
+        <div class="field">
+            <form id="parnt" onclick="submit( )" action="url" method="POST">          
+                <div id="input" class="leftSlide">
+                <b class="bold">Firstname:</b>
+                <input class="inpt"  type="text" onclick="color()" name="firstname" placeholder="jackson" onclick="color()" required>
+                </div>
+                <br>
+                <div id="input" class="rightSlide">
+                <b class="bold">Lastname:</b>
+                <input class="inpt"  type="text" name="Lastname" placeholder="joe" onclick="color()" required>
+                </div>
+                <br>
+                <div id="input" class="leftSlide">
+                <b class="bold">Username:</b>
+                <input class="inpt2"  type="text" name="username" required>
+                </div>
+                <br>
+                <div id="input" class="rightSlide">
+                <b class="bold">Email:</b>
+                <input class="inpt2"  type="email" name="email" placeholder="jacksonjoe@gmail.com" onclick="color()" required>
+                </div>
+                <br>
+                <div id="input" class="leftSlide">
+                <b class="bold">Password:</b>
+                <input class="inpt" id="pass1" type="password" name="password1">
+                </div>
+                <br>
+                <div id="input"  class="rightSlide">
+                <b class="bold">Confirm Password:</b>
+                <input class="inpt2" id="pass2" type="password" name="password2"  >
+                </div>
+                <br>
+                <div id="input" class="leftSlide">
+                        <input onclick="submit( )" class="submit" type="submit" name="submit" value="submit">
+                </div>
+                <div class="Mem"> 
+                    <p>Already a member? <a href="../Log In/Log In.html">Log In</a></p>
+                    </div>
+            </form>
+         </div>
+    </div>
+    <div id="contact">
+        <a href="https://wa.me/7068858731">contact us: <i class="fab fa-whatsapp"></i></a>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+        <div class="about">
+            <h3>About MTC</h3>
+            <p>MTC is an online platform with a 24/7 automated data funding and transaction processing.<br>
+                Enjoy fast and efficient transaction with MTC always!
+            </p>
+        </div>
+        <div class="links">
+            <h3>Navigation links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="addrs">
+            <h3>
+                Address
+            </h3>
+            <p>Opposite satellite campus,NTA road, Off Ilawe road, falegan area, Ado-Ekiti. Ekiti state</p>
+        </div>
+        </div>
+        <!-- <div class="prg"> -->
+        <p>Copyright &copy; MTC.com<br><br><br>All rights reserved. </p>
+        <!-- </div> -->
+        
+    </footer>
+
+
+    <script>
+        // nav section ************************************************
+        
+        let sideNav = document.getElementById("navDiv");
+        let closeBtn = document.getElementById("closeNav");
+        let openBtn = document.getElementById("openNav");
+        function openNav( ){
+            sideNav.style.right = "0";
+            openBtn.style.right = "-100%";
+            // closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "-50%"
+
+
+        }
+        function closeNav( ){
+            sideNav.style.right = "-100%";
+            openBtn.style.right = "0px";
+            closeBtn.style.transform = "rotate(360deg)";
+            body.style.marginLeft = "0%"
+        }
+
+        // End of Nav section*************************************
+
+
+        // Form section***************************************
+        let lslid = document.getElementsByClassName("leftSlide");
+            let rslid = document.getElementsByClassName("rightSlide");
+            let input = document.getElementsByClassName("inpt");
+            let input2 = document.getElementsByClassName("inpt2");
+            let par = document.getElementById("parnt");
+            let arr = par.childNodes;
+            let pwd1 = document.getElementById("pass1");
+            let pwd2 = document.getElementById("pass2");
+            let cont = document.getElementById("contact");
+            cont.style.bottom = "5%";
+            cont.style.position = "fixed";
+            cont.style.zIndex = "1";
+            let contain = document.getElementsByTagName("container");
+            let logo = document.getElementById("logo");
+            logo.style.left = "0px";
+            logo.style.transform = "rotate(-360deg)";
+            let ul = document.getElementById("ul");
+            ul.style.right = "0%";
+
+
+            function color(){
+                input.style.backroundColor = "white";
+            }
+           
+             function frmLd(){
+                for(let i = 0; i<=arr.length; i++){
+                    lslid[i].style.left= "0%";
+                    rslid[i].style.right = "0%";
+                input[i].style.width = "200px";
+                input[i].style.height = "37px";
+                input2[i].style.width = "200px";
+                input2[i].style.height = "37px";
+            }
+           
+        }
+         function sub( ){
+            if(pwd1.value != '' && pwd2 != ''){
+                if(pwd1.value === pwd2.value){
+                    return true;
+                }
+            }
+            if(pwd1.value == '' && pwd2.value == ''){
+                    alert("please create password");
+                    return false;
+                }
+            else{
+                alert("password not matched!");
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>
