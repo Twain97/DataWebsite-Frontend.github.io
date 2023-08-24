@@ -537,6 +537,11 @@ footer{
         z-index: 2;
     }
     input{
-        width: 80%;
+        width: 60%;
+        margin: auto;
+    }
+    select{
+        width: 60%;
+        margin: auto;
     }
 }

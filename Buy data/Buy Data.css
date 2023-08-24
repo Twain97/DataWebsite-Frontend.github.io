@@ -552,9 +552,11 @@ footer{
         z-index: 2;
     }
     select{
-        width: 80%;
+        width: 60%;
+        margin: auto;
     }
     input{
-        width: 80%;
+        width: 60%;
+        margin: auto;
     }
 }
