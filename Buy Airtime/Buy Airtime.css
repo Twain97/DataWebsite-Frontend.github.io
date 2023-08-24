@@ -536,4 +536,7 @@ footer{
         font-size: 10px;
         z-index: 2;
     }
+    input{
+        width: 80%;
+    }
 }
