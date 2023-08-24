@@ -68,8 +68,8 @@ section{
     background-repeat: no-repeat;
     background-position:center;
     /* margin-bottom: 10px; */
-    padding-top: 20px;
-    height: 100vh;
+    padding: 20px;
+    height: fit-content;
 }
 section .container{
     display: flex;
@@ -80,7 +80,7 @@ section .container{
     margin:0 auto;
     padding:0px 20px;
     max-width:500px;
-    height: 95vh;
+    height: fit-content;
     position: relative;
     box-shadow: 8px 5px 25px rgb(90, 88, 88), -15px -5px 40px rgb(2, 2, 2);
     transition: 300ms ease-out;
