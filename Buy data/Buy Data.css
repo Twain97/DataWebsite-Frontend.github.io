@@ -491,6 +491,9 @@ footer{
     form b{
         font-size:24px;
     }
+    form select{
+        width: 70%;
+    }
     form input{
         outline: none;
         margin-top: 20px;
